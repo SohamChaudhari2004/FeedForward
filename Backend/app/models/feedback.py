@@ -26,3 +26,8 @@ class Feedback:
     def get_feedback_by_delivery(delivery_id):
         return list(mongo.db.feedback.find({"delivery_id": delivery_id}))
 
+
+    @staticmethod
+    def get_all_feedback_for_delivery(delivery_id):
+        return list(mongo.db.feedback.find({"delivery_id": delivery_id}))
+

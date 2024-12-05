@@ -53,3 +53,10 @@ class User:
     @staticmethod
     def find_user_by_email(email):
         return mongo.db.users.find_one({"email": email})
+    
+    
+
+    @staticmethod
+    def get_all():
+        # Fetch all users from the "users" collection
+        return list(mongo.db.users.find({}, {"password": 0}))
