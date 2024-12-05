@@ -39,6 +39,7 @@ npm run dev
 
 
 ## Directory Structures
+### Backend Directory
 ````
 backend/
 ├── app/
@@ -74,6 +75,8 @@ backend/
 ├── run.py                          # Main entry point to run the Flask app
 
 ````
+### Frontend Directory
+
 
 ````
 frontend/
